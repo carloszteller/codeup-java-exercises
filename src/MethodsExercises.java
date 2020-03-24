@@ -63,11 +63,19 @@ public class MethodsExercises {
         return num1;
     }
 
-    public static int division(int num1, int num2) {
+    public static int division(int num1, int num2) throws ArithmeticException {
+        if(num2 == 0) {
+            throw new ArithmeticException("Attempted to divide by zero.");
+        }
+
         return num1  / num2;
     }
 
-    public static int modulus(int num1, int num2) {
+    public static int modulus(int num1, int num2) throws ArithmeticException {
+        if(num2 == 0) {
+            throw new ArithmeticException("Attempted to divide by zero.");
+        }
+
         return num1 % num2;
     }
 
