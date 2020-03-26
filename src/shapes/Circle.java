@@ -1,7 +1,5 @@
 package shapes;
 
-import util.Input;
-
 public class Circle {
     private double radius;
 
