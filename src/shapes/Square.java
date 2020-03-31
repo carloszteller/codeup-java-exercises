@@ -1,17 +1,20 @@
 package shapes;
 
 public class Square extends Rectangle {
+    private int side;
+
     public Square(int side) {
         super(side, side);
+        this.side = side;
     }
 
     @Override
     public int getArea() {
-        return (int) Math.pow(width, 2);
+        return (int) Math.pow(side, 2);
     }
 
     @Override
     public int getPerimeter() {
-        return 4 * width;
+        return 4 * side;
     }
 }
