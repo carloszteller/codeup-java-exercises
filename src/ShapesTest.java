@@ -28,5 +28,8 @@ public class ShapesTest {
 
         System.out.println("Perimeter of the rectangle: " + myShape.getPerimeter());
         System.out.println("Area of the rectangle: " + myShape.getArea());
+
+//        myShape.getWidth(); // Error: Cannot resolve method 'getWidth' in 'Measurable'
+//        myShape.getLength(); // Error: Cannot resolve method 'getLength' in 'Measurable'
     }
 }
