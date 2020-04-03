@@ -25,11 +25,13 @@ public class Input {
     }
 
     public int getInt() {
-        return scanner.nextInt();
+//        return scanner.nextInt();
+        return Integer.valueOf(getString());
     }
 
     public double getDouble(double min, double max) {
         double d = scanner.nextDouble();
+
         if(d < min || d > max) {
             System.out.printf("Invalid number! Please enter a number between %.2f and %.2f, inclusiv: ", min, max);
             return getDouble(min, max);
@@ -39,6 +41,15 @@ public class Input {
     }
 
     public double getDouble() {
-        return scanner.nextDouble();
+//        return scanner.nextDouble();
+        return Double.valueOf(getString());
+    }
+
+    public int getBinary() {
+        return Integer.valueOf(getString(), 2);
+    }
+
+    public int getHex() {
+        return Integer.valueOf(getString(), 16);
     }
 }
